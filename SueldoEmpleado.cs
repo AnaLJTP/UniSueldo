@@ -19,7 +19,7 @@ namespace UniSueldo
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            Sueldo salary = new  Sueldo();
+            Sueldo salary = new Sueldo();
             arstxt.Text = Convert.ToString(salary.ARScal(Convert.ToDouble(salarytxt.Text)));
             isrtxt.Text = Convert.ToString(salary.ISRcal(Convert.ToDouble(salarytxt.Text)));
             afptxt.Text = Convert.ToString(salary.AFPcal(Convert.ToDouble(salarytxt.Text)));
