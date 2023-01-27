@@ -63,6 +63,16 @@ namespace UniSueldo.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Logo_blanco_UAPA {
+            get {
+                object obj = ResourceManager.GetObject("Logo-blanco-UAPA", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap logo_EYN {
             get {
                 object obj = ResourceManager.GetObject("logo EYN", resourceCulture);
