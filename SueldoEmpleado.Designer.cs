@@ -175,7 +175,7 @@
             this.sueldonetotxt.FocusedState.Parent = this.sueldonetotxt;
             this.sueldonetotxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.sueldonetotxt.HoverState.Parent = this.sueldonetotxt;
-            this.sueldonetotxt.Location = new System.Drawing.Point(523, 144);
+            this.sueldonetotxt.Location = new System.Drawing.Point(531, 62);
             this.sueldonetotxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.sueldonetotxt.Name = "sueldonetotxt";
             this.sueldonetotxt.PasswordChar = '\0';
@@ -199,7 +199,7 @@
             this.totaldescuentotxt.FocusedState.Parent = this.totaldescuentotxt;
             this.totaldescuentotxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.totaldescuentotxt.HoverState.Parent = this.totaldescuentotxt;
-            this.totaldescuentotxt.Location = new System.Drawing.Point(523, 59);
+            this.totaldescuentotxt.Location = new System.Drawing.Point(531, 144);
             this.totaldescuentotxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.totaldescuentotxt.Name = "totaldescuentotxt";
             this.totaldescuentotxt.PasswordChar = '\0';
