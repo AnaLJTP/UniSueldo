@@ -55,6 +55,7 @@
     <Compile Include="EstuUapa.Designer.cs">
       <DependentUpon>EstuUapa.cs</DependentUpon>
     </Compile>
+    <Compile Include="Notauapa.cs" />
     <Compile Include="Sueldo.cs" />
     <Compile Include="SueldoEmpleado.cs">
       <SubType>Form</SubType>

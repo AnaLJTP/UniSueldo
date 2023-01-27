@@ -43,7 +43,7 @@ namespace UniSueldo
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.platatxt = new Guna.UI2.WinForms.Guna2TextBox();
-            this.actitxt = new Guna.UI2.WinForms.Guna2TextBox();
+            this.activalotxt = new Guna.UI2.WinForms.Guna2TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.aproretxt = new Guna.UI2.WinForms.Guna2TextBox();
@@ -169,7 +169,7 @@ namespace UniSueldo
             this.guna2GradientPanel1.Controls.Add(this.label3);
             this.guna2GradientPanel1.Controls.Add(this.label5);
             this.guna2GradientPanel1.Controls.Add(this.platatxt);
-            this.guna2GradientPanel1.Controls.Add(this.actitxt);
+            this.guna2GradientPanel1.Controls.Add(this.activalotxt);
             this.guna2GradientPanel1.Location = new System.Drawing.Point(32, 257);
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
             this.guna2GradientPanel1.ShadowDecoration.Parent = this.guna2GradientPanel1;
@@ -294,31 +294,31 @@ namespace UniSueldo
             this.platatxt.Size = new System.Drawing.Size(616, 22);
             this.platatxt.TabIndex = 6;
             // 
-            // actitxt
+            // activalotxt
             // 
-            this.actitxt.BackColor = System.Drawing.Color.Transparent;
-            this.actitxt.BorderRadius = 5;
-            this.actitxt.BorderThickness = 2;
-            this.actitxt.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.actitxt.DefaultText = "";
-            this.actitxt.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.actitxt.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.actitxt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.actitxt.DisabledState.Parent = this.actitxt;
-            this.actitxt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.actitxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.actitxt.FocusedState.Parent = this.actitxt;
-            this.actitxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.actitxt.HoverState.Parent = this.actitxt;
-            this.actitxt.Location = new System.Drawing.Point(190, 89);
-            this.actitxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.actitxt.Name = "actitxt";
-            this.actitxt.PasswordChar = '\0';
-            this.actitxt.PlaceholderText = "------";
-            this.actitxt.SelectedText = "";
-            this.actitxt.ShadowDecoration.Parent = this.actitxt;
-            this.actitxt.Size = new System.Drawing.Size(616, 22);
-            this.actitxt.TabIndex = 7;
+            this.activalotxt.BackColor = System.Drawing.Color.Transparent;
+            this.activalotxt.BorderRadius = 5;
+            this.activalotxt.BorderThickness = 2;
+            this.activalotxt.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.activalotxt.DefaultText = "";
+            this.activalotxt.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.activalotxt.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.activalotxt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.activalotxt.DisabledState.Parent = this.activalotxt;
+            this.activalotxt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.activalotxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.activalotxt.FocusedState.Parent = this.activalotxt;
+            this.activalotxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.activalotxt.HoverState.Parent = this.activalotxt;
+            this.activalotxt.Location = new System.Drawing.Point(190, 89);
+            this.activalotxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.activalotxt.Name = "activalotxt";
+            this.activalotxt.PasswordChar = '\0';
+            this.activalotxt.PlaceholderText = "------";
+            this.activalotxt.SelectedText = "";
+            this.activalotxt.ShadowDecoration.Parent = this.activalotxt;
+            this.activalotxt.Size = new System.Drawing.Size(616, 22);
+            this.activalotxt.TabIndex = 7;
             // 
             // pictureBox1
             // 
@@ -384,6 +384,7 @@ namespace UniSueldo
             this.calcular_nota.Size = new System.Drawing.Size(180, 45);
             this.calcular_nota.TabIndex = 17;
             this.calcular_nota.Text = "Calcular";
+            this.calcular_nota.Click += new System.EventHandler(this.calcular_nota_Click);
             // 
             // EstuUapa
             // 
@@ -414,7 +415,7 @@ namespace UniSueldo
         private System.Windows.Forms.PictureBox pictureBox1;
         private Guna.UI2.WinForms.Guna2TextBox Resultadolitxt;
         private Guna.UI2.WinForms.Guna2TextBox Totalnotatxt;
-        private Guna.UI2.WinForms.Guna2TextBox actitxt;
+        private Guna.UI2.WinForms.Guna2TextBox activalotxt;
         private Guna.UI2.WinForms.Guna2TextBox platatxt;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel2;
         private System.Windows.Forms.Label label7;
