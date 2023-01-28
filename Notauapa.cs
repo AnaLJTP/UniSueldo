@@ -16,7 +16,19 @@ namespace UniSueldo
             return (examen + finalwork + valo_acti + plataforma);
         }
 
-       
+        public string Apro_repro(double total_nota)
+        {
+            if (total_nota < 70)
+            {
+                return "Reprobó";
+            }
+
+            else
+            {
+                return "Aprobó";
+            }
+
+        }
 
     }
 }

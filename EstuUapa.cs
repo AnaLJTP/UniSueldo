@@ -25,16 +25,9 @@ namespace UniSueldo
             totalnota = nota.Calcularnota(Convert.ToDouble(Examentxt.Text),Convert.ToDouble(finalworktxt.Text), Convert.ToDouble(activalotxt.Text), Convert.ToDouble(platatxt.Text));
             Totalnotatxt.Text = Convert.ToString(totalnota);
 
-            if(totalnota<70)
-            {
+            aproretxt.Text = nota.Apro_repro(totalnota);
 
-                MessageBox.Show("Este estudiante reprobó", "Sorry tendrás que repetir");
-            }
 
-            else
-            {
-                MessageBox.Show("Este estudiante Aprobó", "Amonosssssssssssssssss");
-            }
             
         }
     }
