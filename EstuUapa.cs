@@ -19,9 +19,23 @@ namespace UniSueldo
 
         private void calcular_nota_Click(object sender, EventArgs e)
         {
+            double totalnota;
             Notauapa nota = new Notauapa();
 
-            Totalnotatxt.Text = Convert.ToString(nota.Calcularnota(Convert.ToDouble(Examentxt.Text),Convert.ToDouble(finalworktxt.Text), Convert.ToDouble(activalotxt.Text), Convert.ToDouble(platatxt.Text)));
+            totalnota = nota.Calcularnota(Convert.ToDouble(Examentxt.Text),Convert.ToDouble(finalworktxt.Text), Convert.ToDouble(activalotxt.Text), Convert.ToDouble(platatxt.Text));
+            Totalnotatxt.Text = Convert.ToString(totalnota);
+
+            if(totalnota<70)
+            {
+
+                MessageBox.Show("Este estudiante reprobó", "Sorry tendrás que repetir");
+            }
+
+            else
+            {
+                MessageBox.Show("Este estudiante Aprobó", "Amonosssssssssssssssss");
+            }
+            
         }
     }
 }
