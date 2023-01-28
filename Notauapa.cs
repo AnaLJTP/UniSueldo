@@ -30,5 +30,34 @@ namespace UniSueldo
 
         }
 
+        public string definirliteral(double total_nota)
+        {
+            if (total_nota>89)
+            {
+                return "A";
+
+            }
+
+            else if (total_nota>=80 )
+            {
+                return "B";
+            }
+
+            else if (total_nota>=70 )
+            {
+                return "C";
+            }
+
+            else if (total_nota>=60)
+            {
+                return "D";
+            }
+
+            else
+            {
+                return "F";
+            }
+        }
+
     }
 }

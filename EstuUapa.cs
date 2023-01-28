@@ -27,7 +27,7 @@ namespace UniSueldo
 
             aproretxt.Text = nota.Apro_repro(totalnota);
 
-
+            Resultadolitxt.Text = nota.definirliteral(totalnota);
             
         }
     }
