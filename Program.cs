@@ -16,7 +16,7 @@ namespace UniSueldo
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new EstuUapa());
+            Application.Run(new SueldoEmpleado());
         }
     }
 }
